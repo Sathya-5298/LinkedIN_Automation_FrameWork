@@ -15,6 +15,7 @@ public class LambdaTestUtility
 	private static ThreadLocal<WebDriver> driverLocal = new ThreadLocal<WebDriver>();
 	private static ThreadLocal<DesiredCapabilities> capabilitesLocal = new ThreadLocal<DesiredCapabilities>();
 	
+	@SuppressWarnings("deprecation")
 	public static WebDriver intializeLambdaTestSession(String browser, String testName)
 	{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
